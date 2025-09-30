@@ -224,10 +224,10 @@ public class ProgramTabController {
         });
     }
 
-    public void setProgram(String programName, int degree) {
+    public void setProgram(String programName, int degree, int maxDegree) {
         this.programName = programName;
         this.degree = degree;
-        this.programTab.setText(this.programName + " (" + this.degree + ")");
+        this.programTab.setText(this.programName + " (" + this.degree + "/" + maxDegree + ")");
     }
 
     public Tab getTab() { return programTab; }
